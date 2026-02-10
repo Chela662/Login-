@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      background-color: #4facfe;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00f2fe;
+    }
+
+    #message {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: red;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      input, button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back!</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+        <p id="errorMessage" style="color: red; display: none;">Invalid username or password.</p>
+
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
