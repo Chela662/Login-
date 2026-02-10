@@ -21,6 +21,22 @@
       min-height: 100vh;
       padding: 1rem;
     }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: reuse your CSS -->
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Welcome, Cynthia!</h1>
+        <p>You have successfully logged in.</p>
+        <a href="login.html">Logout</a>
+    </div>
+</body>
+</html>
 
     .container {
       background: #fff;
